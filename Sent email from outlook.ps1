@@ -1,3 +1,4 @@
+#Sent email from installed and configure Outlook from Windows PowerShell
 #create COM object named Outlook 
 $Outlook = New-Object -ComObject Outlook.Application 
 #create Outlook MailItem named Mail using CreateItem() method 
