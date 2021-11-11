@@ -1,6 +1,8 @@
 #Browser Launching code in PowerShell
 #Open URL in default browser using PowerShell
 Start-Process "http://www.milantony.com/"
+#Open URL in Brave browser using PowerShell
+Start-Process -FilePath 'brave.exe' -ArgumentList 'http://www.milantony.com/'
 #Open URL in MicrosoftEdge using PowerShell
 [system.Diagnostics.Process]::Start("msedge","http://www.milantony.com/")
 #Open URL in Chrome using PowerShell
