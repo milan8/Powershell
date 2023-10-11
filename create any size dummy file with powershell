@@ -1,0 +1,11 @@
+<#
+Author: Milan Antony
+Description:  this is a code for making dummy files in windows using powershell.
+Following for loop will create 10 1GB files in E drive folder 'test'.
+#>
+for ($i =1; $i -le 10; $i++){
+Write-Host "iteration $i"
+$f = New-Object System.IO.FileStream e:\test\test_$i.dat, Create, ReadWrite
+$f.SetLength(1000MB)
+$f.Close()
+}
